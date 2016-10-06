@@ -1,0 +1,12 @@
+01) no capping, no lambda, change correlation lr to 0.0001 after 2 epochs
+02) no capping, no lambda, change correlation lr to 0.0001 after 3 epochs
+03) no capping, no lambda, change correlation lr to 0.0001 after 4 epochs
+04) no capping, no lambda, change correlation lr to 0.0005 after 2 epochs
+05) no capping, no lambda, change correlation lr to 0.0005 after 3 epochs
+06) no capping, no lambda, change correlation lr to 0.0005 after 4 epochs
+07) no capping, 0.1 lambda, change correlation lr to 0.0001 after 2 epochs
+08) no capping, 0.1 lambda, change correlation lr to 0.0001 after 3 epochs
+09) no capping, 0.1 lambda, change correlation lr to 0.0001 after 4 epochs
+10) no capping, 0.1 lambda, change correlation lr to 0.0005 after 2 epochs
+11) no capping, 0.1 lambda, change correlation lr to 0.0005 after 3 epochs
+12) no capping, 0.1 lambda, change correlation lr to 0.0005 after 4 epochs

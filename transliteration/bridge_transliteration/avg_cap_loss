@@ -1,0 +1,33 @@
+#f21 = l_ei_corr
+#f22 = total loss e2i
+#f19 = l_e2f_seq
+#f25 = l_ef_corr
+#f28 = total loss e2f
+
+logfile=/work2/mitesh/bridge_captions_seq/exp_$1/log.txt
+logfile=/work2/mitesh/image2caption/exp_$1/log.txt
+logfile=/work2/mitesh/bucketed_image2caption/exp_$1/log.txt
+logfile=/work2/mitesh/bridge_caption_norm_trunc/exp_$1/log.txt
+logfile=/dccstor/cssblr/mitesh/bridge_transliteration/$1/log.txt
+
+echo 
+echo ***************En-Fr losses*****************************
+for epoch in `seq 0 $2`
+do
+	l_e2f_seq=`grep "epoch $epoch " $logfile | grep l_e2f | cut -d ' ' -f7 | awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'`
+	printf "epoch %d l_e2f_seq = %0.2f  \n" $epoch $l_e2f_seq 
+	#echo epoch $epoch l_e2f = $l_e2f l_f2f = $l_f2f l_e2e = $l_e2e l_f2e = $l_f2e l_e2f_seq = $l_e2f_seq l_f2f_seq = $l_f2f_seq l_ef_corr = $l_ef_corr l_ef_loss = $l_ef_loss
+done
+
+echo 
+echo ***************En-Im losses*****************************
+
+for epoch in `seq 0 $2`
+do
+	l_eg_corr=`grep "epoch $epoch " $logfile | grep loss | cut -d ' ' -f7 | awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'`
+	l_eg_loss=`grep "epoch $epoch " $logfile | grep loss | cut -d ' ' -f10 | awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'`
+  h_e_mean=`grep "epoch $epoch " $logfile | grep loss | cut -d ' ' -f13 | awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'`
+	h_i_mean=`grep "epoch $epoch " $logfile | grep loss | cut -d ' ' -f16 | awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'`
+	printf "epoch %d l_eg_corr = %0.2f loss = %0.2f h_e_mean = %0.2f h_i_mean = %0.2f\n" $epoch $l_eg_corr $l_eg_loss $h_e_mean $h_i_mean
+	#echo epoch $epoch l_e2f = $l_e2f l_f2f = $l_f2f l_e2e = $l_e2e l_f2e = $l_f2e l_e2f_seq = $l_e2f_seq l_f2f_seq = $l_f2f_seq l_ef_corr = $l_ef_corr l_ef_loss = $l_ef_loss
+done

@@ -1,0 +1,1 @@
+grep 'SourceName\|TargetName' NEWS2012-Ref-EnBa-1000.xml | sed 's/>/:/g' | sed 's/</:/g' | awk 'BEGIN{FS=":"; source= ""}{ if ($2 ~ "SourceName") { source = $3;} if ($2 ~ "TargetName") {print source"\t"$3}}'

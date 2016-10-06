@@ -1,0 +1,43 @@
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcurand.so locally
+WARNING:tensorflow:<tensorflow.python.ops.rnn_cell.BasicLSTMCell object at 0x10031ebab50>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+can't determine number of CPU cores: assuming 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0002:04:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:126] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0002:04:00.0)
+can't determine number of CPU cores: assuming 4
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 9702 get requests, put_count=9694 evicted_count=1000 eviction_rate=0.103157 and unsatisfied allocation rate=0.114203
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 100 to 110
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 29516931 get requests, put_count=29516900 evicted_count=9000 eviction_rate=0.00030491 and unsatisfied allocation rate=0.000306333
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 29534187 get requests, put_count=29533962 evicted_count=19000 eviction_rate=0.000643327 and unsatisfied allocation rate=0.000651313
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 29550878 get requests, put_count=29550874 evicted_count=29000 eviction_rate=0.000981358 and unsatisfied allocation rate=0.000981866
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 29567980 get requests, put_count=29567791 evicted_count=39000 eviction_rate=0.001319 and unsatisfied allocation rate=0.00132576
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 29585236 get requests, put_count=29584853 evicted_count=49000 eviction_rate=0.00165625 and unsatisfied allocation rate=0.00166955
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 29601773 get requests, put_count=29601618 evicted_count=59000 eviction_rate=0.00199313 and unsatisfied allocation rate=0.00199873
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 2876 get requests, put_count=2882 evicted_count=1000 eviction_rate=0.346981 and unsatisfied allocation rate=0.354312
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 281 to 309
+train_bridge_captions.py:407: RuntimeWarning: invalid value encountered in divide
+  in_ei_corr = numer/np.sqrt(denom1 * denom2)
+Traceback (most recent call last):
+  File "train_bridge_captions.py", line 347, in <module>
+    l_e2f, _ = sess.run([l_e2f_op, train_e_f_op], feed_dict=feed_dict)
+  File "/dccstor/anirlaha1/deep/tflow-0.10/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 710, in run
+    run_metadata_ptr)
+  File "/dccstor/anirlaha1/deep/tflow-0.10/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 908, in _run
+    feed_dict_string, options, run_metadata)
+  File "/dccstor/anirlaha1/deep/tflow-0.10/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 958, in _do_run
+    target_list, options, run_metadata)
+  File "/dccstor/anirlaha1/deep/tflow-0.10/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 965, in _do_call
+    return fn(*args)
+  File "/dccstor/anirlaha1/deep/tflow-0.10/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 947, in _run_fn
+    status, run_metadata)
+KeyboardInterrupt

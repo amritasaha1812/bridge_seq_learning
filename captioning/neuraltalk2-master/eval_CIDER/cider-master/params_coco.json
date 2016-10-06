@@ -1,0 +1,7 @@
+{
+	"pathToData" : "coco_data/",
+	"refName" : "ref.json",
+	"candName" : "pred.json",
+	"resultFile" : "results.json",
+	"idf" : "coco-val-df"
+}
