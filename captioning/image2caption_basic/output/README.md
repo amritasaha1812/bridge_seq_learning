@@ -15,9 +15,12 @@ cd ..
 ./eval.sh  im_en_01/output/test_i2e_<step>.txt reference_data/en_en-de_r [to get the results on the test set]
 
 for image 2 German captions:
+
 cd ..
+
 ./eval.sh  im_de_01/output/valid_i2e_<step>.txt reference_data/de_val_r [to get the results on the validation set]
-./eval.sh  im_de_01/output/test_i2e_<step>.txt reference_data/de_r
+
+./eval.sh  im_de_01/output/test_i2e_<step>.txt reference_data/de_r [to get the results on the test set]
 -----------------------------------
 
 For the configuration with Image,English,French:
