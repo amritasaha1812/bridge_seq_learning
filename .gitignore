@@ -14,3 +14,16 @@ captioning/wmt_workshop_task2/all/image
 captioning/wmt_workshop_task2/train/image
 captioning/wmt_workshop_task2/valid/image
 captioning/wmt_workshop_task2/test/image
+captioning/bridge_caption_norm_trunc/err.txt
+captioning/bridge_caption_norm_trunc/out.txt
+captioning/bridge_caption_norm_trunc/output_euro.txt
+captioning/bridge_caption_norm_trunc/pred
+captioning/bridge_caption_norm_trunc/pred.json
+captioning/bridge_caption_norm_trunc/ref.json
+captioning/image2caption_basic/results.json
+transliteration/bridge_transliteration/notes
+transliteration/bridge_transliteration/t1
+transliteration/bridge_transliteration/t2
+transliteration/bridge_transliteration/t3
+transliteration/bridge_transliteration/t4
+transliteration/bridge_transliteration/t5
