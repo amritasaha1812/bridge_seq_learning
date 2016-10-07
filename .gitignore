@@ -5,6 +5,7 @@ captioning/bridge_caption_norm_trunc_copy/im_en_fr_bow_04
 captioning/bridge_caption_norm_trunc_copy/im_en_fr_bow_05
 captioning/bridge_caption_norm_trunc_copy/im_en_fr_bow_06
 captioning/bridge_caption_norm_trunc_copy/old
+captioning/bridge_caption_norm_trunc_copy/
 captioning/bridge_caption_norm_trunc/im_en_fr_bow_0
 captioning/mscoco_maxlength16/test/image/
 captioning/mscoco_maxlength16/valid/image/
